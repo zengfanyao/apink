@@ -6,7 +6,6 @@
  * Time: 下午5:15
  */
 
-namespace Apink;
 $condig=[
     'secretId'=>'AKIDxiOq31iFTSSEkzrYx60e18yYswjH32Xn',
     'secretKey'=>'99uWt1vZy95mERO5XjfLlvqUs31lHYaM',
