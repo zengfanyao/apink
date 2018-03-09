@@ -16,7 +16,6 @@ use function curl_setopt;
 use Exception;
 use function json_decode;
 use function json_encode;
-use const true;
 
 class Request
 {
