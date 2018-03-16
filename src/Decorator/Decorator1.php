@@ -88,6 +88,7 @@ class Soy extends CondimentDecorator
 
 $HouseBlend=new HouseBlend();
 $espress=new Espresso($HouseBlend);
+print_r($espress->getDescration());
 $beverage=new Mocha($HouseBlend);
 $beverage=new Soy($HouseBlend);
 
