@@ -2,9 +2,10 @@
     "name": "apink/apink",
     "type": "library",
     "version": "0.0.1",
+    "license": "MIT",
     "authors": [
         {
-            "name": "曾繁耀",
+            "name": "apink",
             "email": "zengfanyaotara@163.com"
         }
     ],
