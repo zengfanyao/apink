@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 工厂模式
  */
@@ -6,13 +7,15 @@ interface people
 {
     function jinhun();
 }
-class man implements people 
+
+class man implements people
 {
     public function jinhun()
     {
         echo("送玫瑰，送戒指");
     }
 }
+
 class women implements people
 {
     public function jinhun()
@@ -20,6 +23,7 @@ class women implements people
         echo "穿婚纱";
     }
 }
+
 /**
  * 此处是与简单工厂区别本质所在，将对象的创建抽象成一个接口
  */
@@ -27,6 +31,7 @@ interface createMan
 {
     function create();
 }
+
 class FactoryMan implements createMan
 {
     public function create()
@@ -34,6 +39,7 @@ class FactoryMan implements createMan
         return new man();
     }
 }
+
 class FactoryWomen implements createMan
 {
     public function create()
@@ -41,14 +47,16 @@ class FactoryWomen implements createMan
         return new women();
     }
 }
+
 /**
  * test
  */
-class Client{
+class Client
+{
     function test()
     {
-        $factory=new FactoryMan();
-        $man=$factory->create();
+        $factory = new FactoryMan();
+        $man = $factory->create();
         $man->jinhun();
 
         $factory = new FactoryWomen();
@@ -57,6 +65,7 @@ class Client{
 
     }
 }
-$client=new Client();
+
+$client = new Client();
 $client->test();
 ?>

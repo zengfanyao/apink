@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 简单工厂模式
  */
@@ -6,6 +7,7 @@ interface people
 {
     public function jinhun();
 }
+
 class man implements people
 {
     public function jinhun()
@@ -13,6 +15,7 @@ class man implements people
         echo "送玫瑰，送戒指";
     }
 }
+
 class  women implements people
 {
     public function jinhun()
@@ -21,19 +24,21 @@ class  women implements people
     }
 }
 
-class Simplefacotry 
+class Simplefacotry
 {
     static function createMan()
     {
         return new man();
     }
+
     static function createWomen()
     {
         return new women();
     }
 }
-$man =Simplefacotry::createMan();
+
+$man = Simplefacotry::createMan();
 $man->jinhun();
-$women=Simplefacotry::createWomen();
+$women = Simplefacotry::createWomen();
 $man->jinhun();
 ?>
