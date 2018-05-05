@@ -30,4 +30,5 @@ class Proxy implements shop
     {
         echo '跑去香港代购';
     }
+
 }
